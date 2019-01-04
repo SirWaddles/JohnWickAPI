@@ -24,10 +24,15 @@ function getAssetList() {
 }
 
 function findAsset(term) {
-    return assetList.filter(v => v.hasOwnProperty('name') && v.name.toLowerCase().includes(term.toLowerCase()));
+    return assetList.filter(v => v.hasOwnProperty('name') && v.name.includes(term.toLowerCase()));
+}
+
+function getAsset(id) {
+    return assetList.filter(v => v.id === id.toLowerCase()).pop();
 }
 
 refreshAssetList();
 
+exports.getAsset = getAsset;
 exports.getAssetList = getAssetList;
 exports.findAsset = findAsset;
