@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.4"
+  },
+  "name": "JohnWickAPI",
+  "version": "0.1.0",
+  "description": "An API offering various endpoints for the JohnWick Discord Bot",
+  "main": "server.js",
+  "repository": "https://github.com/SirWaddles/JohnWickAPI",
+  "author": "Waddlesworth <github@genj.io>",
+  "license": "MIT"
+}
