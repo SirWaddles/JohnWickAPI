@@ -8,4 +8,6 @@ app.listen(8719, () => {
     console.log("Express started");
 });
 
+app.use('/', express.json());
+
 module.exports = app;
